@@ -1,8 +1,18 @@
 import React from 'react'
+import { Container } from 'reactstrap'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className='bground-gradient secondary-text'>
+            <Container className='d-flex flex-column align-items-center py-4'>
+                <h4>djg.</h4>
+                <div>
+                    <AiFillGithub size={24} className='mx-3' />
+                    <AiFillLinkedin size={24} className='mx-3' />
+                </div>
+            </Container>
+        </div>
     )
 }
 

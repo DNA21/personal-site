@@ -14,7 +14,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className='shadow position-absolute w-100'>
+        <div className='bground-gradient shadow position-absolute w-100'>
             <Container>
                 <Navbar>
                     <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
@@ -40,9 +40,9 @@ const Header = () => {
                         </OffcanvasBody>
                     </Offcanvas>
                     <NavbarBrand>
-                        <h1>djg.</h1>
+                        <h1 className='secondary-text'>djg.</h1>
                     </NavbarBrand>
-                    <Button>Contact Me</Button>
+                    <Button className='secondary-text button-color'>Contact Me</Button>
                 </Navbar>
             </Container>
         </div>

@@ -38,7 +38,7 @@
 }
 
 .resume-gradient {
-  background: linear-gradient(to right, green, silver)
+  background: linear-gradient(to right, #85BDa6, #c0d7bb)
 }
 
 .project-img {
@@ -53,4 +53,40 @@ a {
 
 .mw-75 {
   max-width: 75%;
+}
+
+body {
+  background-color: #283E50;
+}
+
+.main-text {
+  color: #BEDCFE;
+}
+
+.secondary-text {
+  color: #4A051C;
+}
+
+.main-bg {
+  background-color: #283E50;
+}
+
+.bground-gradient {
+  background: linear-gradient(to right, #85BDa6, #c0d7bb)
+}
+
+.button-color {
+  background-color: #85BDa6;
+}
+
+.git-color {
+  color: #85BDa6
+}
+
+.git-color:hover {
+  color: #569F81
+}
+
+.btn:hover{
+  background-color: #569F81;
 }
