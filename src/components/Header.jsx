@@ -18,7 +18,7 @@ const Header = () => {
             <Container>
                 <Navbar>
                     <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-                    <Offcanvas isOpen={menuOpen} toggle={() => setMenuOpen(!menuOpen)}>
+                    <Offcanvas className='mw-75' isOpen={menuOpen} toggle={() => setMenuOpen(!menuOpen)}>
                         <OffcanvasHeader className='row'>
                             <div className='row'>
                             <h4 className='col-10'>DJG.</h4>

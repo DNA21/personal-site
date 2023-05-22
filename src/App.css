@@ -40,3 +40,17 @@
 .resume-gradient {
   background: linear-gradient(to right, green, silver)
 }
+
+.project-img {
+  max-width: 60%;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.mw-75 {
+  max-width: 75%;
+}
