@@ -89,4 +89,25 @@ body {
 
 .btn:hover{
   background-color: #569F81;
+  color: #4A051C;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #283E50;
+  color: #4A051c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-brand:hover {
+  cursor: pointer;
+}
+
+.active {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #283E50;
+  color: #4A051c;
+  font-weight: 600
 }

@@ -3,7 +3,7 @@ import { Button, Container } from 'reactstrap'
 
 const Resume = () => {
     return (
-        <div className='bground-gradient'>
+        <div className='bground-gradient py-3' id='about'>
             <Container>
                 <div className='row'>
                     <div className='col-12 col-sm-8 my-3'>

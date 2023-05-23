@@ -4,7 +4,7 @@ import { Container, Button, Label, Col, FormGroup, Row } from 'reactstrap'
 
 const Contact = () => {
     return (
-        <div className='bground-gradient secondary-text pt-3'>
+        <div className='bground-gradient secondary-text pt-3' id='contact'>
             <Container>
                 <div className='d-flex flex-column align-items-center'>
                     <h3>

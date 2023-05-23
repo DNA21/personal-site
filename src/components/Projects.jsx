@@ -17,7 +17,7 @@ import { RxOpenInNewWindow } from 'react-icons/rx';
 
 const Projects = () => {
     return (
-        <Container>
+        <Container id='projects' className='pt-5'>
             <Row className='my-4 d-flex'>
                 <Col>
                     <h2 className='main-text'>PROJECTS</h2>
