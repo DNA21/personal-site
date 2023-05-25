@@ -51,20 +51,8 @@ a {
   color: black;
 }
 
-.mw-75 {
-  max-width: 75%;
-}
-
 body {
   background-color: #283E50;
-}
-
-.main-text {
-  color: #BEDCFE;
-}
-
-.secondary-text {
-  color: #4A051C;
 }
 
 .main-bg {
@@ -75,20 +63,13 @@ body {
   background: linear-gradient(to right, #85BDa6, #c0d7bb)
 }
 
-.button-color {
-  background-color: #85BDa6;
+.hover-effect:hover {
+  color: #569F81 !important;
+  cursor: pointer;
 }
 
-.git-color {
-  color: #85BDa6
-}
-
-.git-color:hover {
-  color: #569F81
-}
-
-.btn:hover{
-  background-color: #569F81;
+.btn:hover {
+  background-color: #569F81 !important;
   color: #4A051C;
   font-weight: 600;
 }

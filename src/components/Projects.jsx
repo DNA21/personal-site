@@ -5,7 +5,6 @@ import {
     Col,
     Card,
     CardBody,
-    Button,
     CardTitle,
     CardText,
     Badge
@@ -17,22 +16,22 @@ import { RxOpenInNewWindow } from 'react-icons/rx';
 
 const Projects = () => {
     return (
-        <Container id='projects' className='pt-5'>
+        <Container id='projects' className='py-5'>
             <Row className='my-4 d-flex'>
                 <Col>
-                    <h2 className='main-text'>PROJECTS</h2>
+                    <h2 className='text-primary'>PROJECTS</h2>
                 </Col>
                 <Col>
                     <div className='d-flex align-items-center justify-content-end'>
-                        <AiOutlineGithub size={48} className='git-color' />
-                        {/* <Button size='lg' className='px-3 button-color secondary-text'>GITHUB</Button> */}
+                        <AiOutlineGithub size={48} className='text-middle hover-effect' />
+                        {/* <Button size='lg' className='px-3 button-color text-secondary'>GITHUB</Button> */}
                     </div>
                 </Col>
             </Row>
 
             {/* Displays for large screens and up */}
             <div className='d-none d-lg-block'>
-                <Card className='text-center d-flex flex-row w-75 mx-auto main-bg border-0 main-text'>
+                <Card className='text-center d-flex flex-row w-75 mx-auto main-bg border-0 text-primary'>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
                             <h3>No-Vig Odds</h3>
@@ -47,17 +46,17 @@ const Projects = () => {
                             <Badge pill>Firebase</Badge>
                         </div>
                         <div className='d-flex justify-content-evenly'>
-                            <a href='https://github.com/DNA21/no-vig-odds' target='_blank'><span className='main-text'>Code <AiOutlineGithub /></span></a>
-                            <a href='https://no-vig-odds.web.app/' target='_blank'><span className='main-text'>Live Demo <RxOpenInNewWindow /></span></a>
+                            <a href='https://github.com/DNA21/no-vig-odds' target='_blank' rel='noreferrer'><span className='text-primary'>Code <AiOutlineGithub /></span></a>
+                            <a href='https://no-vig-odds.web.app/' target='_blank' rel='noreferrer'><span className='text-primary'>Live Demo <RxOpenInNewWindow /></span></a>
                         </div>
                     </CardBody>
-                    <img src={noVig} className='project-img' style={{ borderRadius: 2 + 'rem'}}/>
+                    <img src={noVig} className='project-img' alt='No Vig Screenshot' style={{ borderRadius: 2 + 'rem'}}/>
                 </Card>
             </div>
 
             <div className='d-none d-lg-block pb-3'>
-                <Card className='text-center d-flex flex-row w-75 mx-auto main-bg border-0 main-text'>
-                    <img src={cryptoGecko} className='project-img' style={{ borderRadius: 2 + 'rem'}}/>
+                <Card className='text-center d-flex flex-row w-75 mx-auto main-bg border-0 text-primary'>
+                    <img src={cryptoGecko} className='project-img' alt='CryptoGecko screenshot' style={{ borderRadius: 2 + 'rem'}}/>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
                             <h3>CryptoGecko</h3>
@@ -72,8 +71,8 @@ const Projects = () => {
                             <Badge pill>Firebase</Badge>
                         </div>
                         <div className='d-flex justify-content-evenly'>
-                            <a href='https://github.com/DNA21/coin-tracker' target='_blank'><span className='main-text'>Code <AiOutlineGithub /></span></a>
-                            <a href='https://cryptogecko-dg.web.app/' target='_blank'><span className='main-text'>Live Demo <RxOpenInNewWindow /></span></a>
+                            <a href='https://github.com/DNA21/coin-tracker' target='_blank' rel='noreferrer'><span className='text-primary'>Code <AiOutlineGithub /></span></a>
+                            <a href='https://cryptogecko-dg.web.app/' target='_blank' rel='noreferrer'><span className='text-primary'>Live Demo <RxOpenInNewWindow /></span></a>
                         </div>
                     </CardBody>
                 </Card>
@@ -81,7 +80,7 @@ const Projects = () => {
 
             {/* Displays for screens xs up to large */}
             <div className='d-block d-lg-none'>
-                <Card className='text-center w-75 mx-auto main-bg main-text border-0'>
+                <Card className='text-center w-75 mx-auto main-bg text-primary border-0'>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
                             <h3>No-Vig Odds</h3>
@@ -96,16 +95,16 @@ const Projects = () => {
                             <Badge pill>Firebase</Badge>
                         </div>
                         <div className='d-flex justify-content-evenly'>
-                            <a href='https://github.com/DNA21/no-vig-odds' target='_blank'><span className='main-text'>Code <AiOutlineGithub /></span></a>
-                            <a href='https://no-vig-odds.web.app/' target='_blank'><span className='main-text'>Live Demo <RxOpenInNewWindow /></span></a>
+                            <a href='https://github.com/DNA21/no-vig-odds' target='_blank' rel='noreferrer'><span className='text-primary'>Code <AiOutlineGithub /></span></a>
+                            <a href='https://no-vig-odds.web.app/' target='_blank' rel='noreferrer'><span className='text-primary'>Live Demo <RxOpenInNewWindow /></span></a>
                         </div>
                     </CardBody>
-                    <img src={noVig} style={{ borderRadius: 2 + 'rem'}}/>
+                    <img src={noVig} alt='No Vig Screenshot' style={{ borderRadius: 2 + 'rem'}}/>
                 </Card>
             </div>
 
             <div className='d-block d-lg-none pb-3'>
-                <Card className='text-center w-75 mx-auto main-bg main-text border-0'>
+                <Card className='text-center w-75 mx-auto main-bg text-primary border-0'>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
                             <h3>CryptoGecko</h3>
@@ -120,11 +119,11 @@ const Projects = () => {
                             <Badge pill>Firebase</Badge>
                         </div>
                         <div className='d-flex justify-content-evenly'>
-                            <a href='https://github.com/DNA21/coin-tracker' target='_blank'><span className='main-text'>Code <AiOutlineGithub /></span></a>
-                            <a href='https://cryptogecko-dg.web.app/' target='_blank'><span className='main-text'>Live Demo <RxOpenInNewWindow /></span></a>
+                            <a href='https://github.com/DNA21/coin-tracker' target='_blank' rel='noreferrer'><span className='text-primary'>Code <AiOutlineGithub /></span></a>
+                            <a href='https://cryptogecko-dg.web.app/' target='_blank' rel='noreferrer'><span className='text-primary'>Live Demo <RxOpenInNewWindow /></span></a>
                         </div>
                     </CardBody>
-                    <img src={cryptoGecko} style={{ borderRadius: 2 + 'rem'}}/>
+                    <img src={cryptoGecko} alt='CryptoGecko screenshot' style={{ borderRadius: 2 + 'rem'}}/>
                 </Card>
             </div>
         </Container>

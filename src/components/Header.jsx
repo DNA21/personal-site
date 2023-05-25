@@ -5,13 +5,11 @@ import {
     Navbar,
     NavbarToggler,
     NavbarBrand,
-    Button,
-    Offcanvas,
-    OffcanvasHeader,
-    OffcanvasBody,
+    // Offcanvas,
+    // OffcanvasHeader,
+    // OffcanvasBody,
     Collapse,
     Nav,
-    NavLink,
     NavItem
 } from 'reactstrap';
 
@@ -24,7 +22,7 @@ const Header = () => {
                 <Navbar expand='md'>
                     <NavbarBrand>
                         <Link to="intro" className='nav-brand' spy={true} smooth={true} offset={-70} duration={500}>
-                            <h1 className='secondary-text'>djg.</h1>
+                            <h1 className='text-secondary'>djg.</h1>
                         </Link>
                     </NavbarBrand>
 
@@ -32,17 +30,17 @@ const Header = () => {
                     <Collapse navbar isOpen={menuOpen}>
                         <Nav className='ms-auto d-flex d-flex-row' navbar>
                             <NavItem className='px-2'>
-                                <Link activeClass='active' to="about" spy={true} smooth={true} offset={-70} duration={500} onClick={()=> setMenuOpen(false)} className='nav-link secondary-text'>
+                                <Link activeClass='active' to="about" spy={true} smooth={true} offset={-70} duration={500} onClick={()=> setMenuOpen(false)} className='nav-link text-secondary'>
                                     About
                                 </Link>
                             </NavItem>
                             <NavItem className='px-2'>
-                                <Link activeClass='active' to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={()=> setMenuOpen(false)}className='nav-link secondary-text'>
+                                <Link activeClass='active' to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={()=> setMenuOpen(false)}className='nav-link text-secondary'>
                                     Projects
                                 </Link>
                             </NavItem>
                             <NavItem>
-                                <Link activeClass='active' to="contact" spy={true} smooth={true} offset={0} duration={500} onClick={()=> setMenuOpen(false)}className='nav-link secondary-text'>
+                                <Link activeClass='active' to="contact" spy={true} smooth={true} offset={0} duration={500} onClick={()=> setMenuOpen(false)}className='nav-link text-secondary'>
                                     Contact
                                 </Link>
                             </NavItem>
@@ -71,9 +69,9 @@ const Header = () => {
                         </OffcanvasBody>
                     </Offcanvas>
                     <NavbarBrand>
-                        <h1 className='secondary-text'>djg.</h1>
+                        <h1 className='text-secondary'>djg.</h1>
                     </NavbarBrand>
-                    <Button className='secondary-text button-color'>Contact Me</Button> */}
+                    <Button className='text-secondary button-color'>Contact Me</Button> */}
                 </Navbar>
             </Container>
         </div>

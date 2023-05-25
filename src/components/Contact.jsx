@@ -1,10 +1,10 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik'
-import { Container, Button, Label, Col, FormGroup, Row } from 'reactstrap'
+import { Container, Label, Col, FormGroup, Row } from 'reactstrap'
 
 const Contact = () => {
     return (
-        <div className='bground-gradient secondary-text pt-3' id='contact'>
+        <div className='bground-gradient text-secondary pt-3' id='contact'>
             <Container>
                 <div className='d-flex flex-column align-items-center'>
                     <h3>
