@@ -31,7 +31,7 @@ const Projects = () => {
 
             {/* Displays for large screens and up */}
             <div className='d-none d-lg-block'>
-                <Card className='text-center d-flex flex-row w-75 mx-auto main-bg border-0 text-primary'>
+                <Card className='text-center d-flex flex-row w-75 mx-auto bg-dark border-0 text-primary'>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
                             <h3>No-Vig Odds</h3>
@@ -55,7 +55,7 @@ const Projects = () => {
             </div>
 
             <div className='d-none d-lg-block pb-3'>
-                <Card className='text-center d-flex flex-row w-75 mx-auto main-bg border-0 text-primary'>
+                <Card className='text-center d-flex flex-row w-75 mx-auto bg-dark border-0 text-primary'>
                     <img src={cryptoGecko} className='project-img' alt='CryptoGecko screenshot' style={{ borderRadius: 2 + 'rem'}}/>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
@@ -80,7 +80,7 @@ const Projects = () => {
 
             {/* Displays for screens xs up to large */}
             <div className='d-block d-lg-none'>
-                <Card className='text-center w-75 mx-auto main-bg text-primary border-0'>
+                <Card className='text-center w-75 mx-auto bg-dark text-primary border-0'>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
                             <h3>No-Vig Odds</h3>
@@ -104,7 +104,7 @@ const Projects = () => {
             </div>
 
             <div className='d-block d-lg-none pb-3'>
-                <Card className='text-center w-75 mx-auto main-bg text-primary border-0'>
+                <Card className='text-center w-75 mx-auto bg-dark text-primary border-0'>
                     <CardBody className='d-flex flex-column justify-content-evenly'>
                         <CardTitle>
                             <h3>CryptoGecko</h3>
