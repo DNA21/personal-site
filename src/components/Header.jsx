@@ -35,12 +35,12 @@ const Header = () => {
                                 </Link>
                             </NavItem>
                             <NavItem className='px-2'>
-                                <Link activeClass='active' to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={()=> setMenuOpen(false)}className='nav-link text-secondary'>
+                                <Link activeClass='active' to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={()=> setMenuOpen(false)} className='nav-link text-secondary'>
                                     Projects
                                 </Link>
                             </NavItem>
                             <NavItem>
-                                <Link activeClass='active' to="contact" spy={true} smooth={true} offset={0} duration={500} onClick={()=> setMenuOpen(false)}className='nav-link text-secondary'>
+                                <Link activeClass='active' to="contact" spy={true} smooth={true} offset={-70} duration={500} onClick={()=> setMenuOpen(false)} className='nav-link text-secondary'>
                                     Contact
                                 </Link>
                             </NavItem>

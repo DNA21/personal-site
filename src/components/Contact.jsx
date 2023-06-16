@@ -5,7 +5,7 @@ import { Container, Label, Col, FormGroup, Row } from 'reactstrap'
 const Contact = () => {
     return (
         <div className='bground-gradient text-secondary pt-3' id='contact'>
-            <Container>
+            <Container style={{ height: 80 + 'vh'}} className='d-flex flex-column justify-content-center' >
                 <div className='d-flex flex-column align-items-center'>
                     <h3>
                         Send me a message!

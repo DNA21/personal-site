@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import Typewriter from 'typewriter-effect'
 import desktopImage from '../app/assets/img/hero1920.png'
 import largeImage from '../app/assets/img/hero3200.png'
-import mobileImage from '../app/assets/img/no-vig2.png'
+import mobileImage from '../app/assets/img/hero650.png'
 
 const useWindowWidth = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);

@@ -23,8 +23,7 @@ const Projects = () => {
                 </Col>
                 <Col>
                     <div className='d-flex align-items-center justify-content-end'>
-                        <AiOutlineGithub size={48} className='text-middle hover-effect' />
-                        {/* <Button size='lg' className='px-3 button-color text-secondary'>GITHUB</Button> */}
+                        <a href='https://github.com/DNA21'><AiOutlineGithub size={48} className='text-middle hover-effect' /></a>
                     </div>
                 </Col>
             </Row>
