@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Formik, Field, Form } from 'formik'
-import { Container, Label, Col, FormGroup, Row } from 'reactstrap'
+import { Container, Label, Col, FormGroup, Row, Button } from 'reactstrap'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_e5srrg4', 'template_qcywmjc', form.current, 'dgbnO7JgRsCt1Czpm')
+            .then((result) => {
+                console.log(result.text);
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
     return (
         <div className='bground-gradient text-secondary pt-3' id='contact'>
             <Container style={{ height: 80 + 'vh'}} className='d-flex flex-column justify-content-center' >
@@ -19,7 +34,7 @@ const Contact = () => {
                         message: ''
                     }}
                 >
-                    <Form>
+                    <Form ref={form} onSubmit={sendEmail}>
                         <Row>
                             <Col md={{size: 4, offset: 2}}>
                                 <FormGroup>
@@ -46,6 +61,11 @@ const Contact = () => {
                                     </Label>
                                     <Field className='form-control' name='message' as='textarea' rows='6' placeholder='Message' />
                                 </FormGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md={{offset: 2}}>
+                                <Button type='submit'>Send</Button>
                             </Col>
                         </Row>
 
